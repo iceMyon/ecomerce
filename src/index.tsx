@@ -6,6 +6,7 @@ import {API} from "./config";
 import {Provider} from "react-redux";
 import store from "./store"
 import {history} from "./store";
+import "./style.css"
 
 
 console.log(API)

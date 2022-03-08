@@ -6,7 +6,7 @@ const Home = () => {
   const state = useSelector(state=>state)
   return (
     <div>
-      <Layout>Home {JSON.stringify(state)}</Layout>
+      <Layout title="冰冰商城" subTitle="敬请期待" >Home {JSON.stringify(state)}</Layout>
     </div>
   );
 };

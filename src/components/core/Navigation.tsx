@@ -14,6 +14,8 @@ const Navigation = () => {
   const pathname = router.location.pathname
   const isHome = useActive(pathname,'/')
   const isShop = useActive(pathname,'/shop')
+  const isSingin = useActive(pathname,'/singin')
+  const isSingup = useActive(pathname,'/singup')
 
 
 
@@ -24,6 +26,12 @@ const Navigation = () => {
       </Menu.Item>
       <Menu.Item className={isShop}>
         <Link to='/shop'>商城</Link>
+      </Menu.Item>
+      <Menu.Item className={isSingin}>
+        <Link to='/singin'>登录</Link>
+      </Menu.Item>
+      <Menu.Item className={isSingup}>
+        <Link to='/singup'>注册</Link>
       </Menu.Item>
     </Menu>
   );
